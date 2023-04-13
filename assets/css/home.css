@@ -1,0 +1,85 @@
+a{
+    text-decoration: none;
+}
+h1 {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+#video-list-container {
+    width: 100%;
+}
+.video-list-container {
+    background-color: #1a1a1a;
+    width: 50%;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .video-list-container {
+        background-color: #1a1a1a;
+        width: 100%;
+        padding: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+    }
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .video-list-container {
+        background-color: #1a1a1a;
+        width: 80%;
+        padding: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+    }
+}
+/* // Large devices (laptops, 992px and up) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .video-list-container {
+        background-color: #1a1a1a;
+        width: 70%;
+        padding: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+    }
+}
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 993px) and (max-width: 1200px) {
+    .video-list-container {
+        background-color: #1a1a1a;
+        width: 60%;
+        padding: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+    }
+}
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1201px) and (max-width: 1400px) {
+    .video-list-container {
+        background-color: #1a1a1a;
+        width: 50%;
+        padding: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+    }
+}
+/* // XXX-Large devices (larger desktops, TV, 1401px and up) */
+@media (min-width: 1401px) {
+    .video-list-container {
+        background-color: #1a1a1a;
+        width: 50%;
+        padding: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+    }
+}

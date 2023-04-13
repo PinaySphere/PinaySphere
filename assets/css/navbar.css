@@ -1,0 +1,166 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+body {
+    background-color: #0d0d0d;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+}
+a:hover {
+    color: #00e600;
+}
+.action_button:hover {
+    scale: 1.05;
+    color: #000000;
+}
+.action_button:active {
+    scale: 0.95;
+}
+.navbar .top{
+    width: 100%;
+    height: 10vh;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .top .logo {
+    width: 180px;
+    height: auto;
+    margin-left: 10px;
+}
+.navbar .top .socmed-icon {
+    content: '';
+    display: flex;  
+    
+}
+.navbar .top .socmed-icon a {
+    text-align: center;
+    content: '';
+    padding-top: 7px;
+    margin: 0 3px;
+    height: 40px;
+    width: 40px;
+    font-size: 21px;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+.top .socmed-icon a:nth-child(1){
+    background: #4267B2;
+  }
+  .top .socmed-icon a:nth-child(1):hover{
+    color: #4267B2;
+    background: #fff;
+  }
+  .top .socmed-icon a:nth-child(2){
+    background: #1DA1F2;
+  }
+  .top .socmed-icon a:nth-child(2):hover{
+    color: #1DA1F2;
+    background: #fff;
+  }
+  .top .socmed-icon a:nth-child(3){
+    background: #229ED9;
+  }
+  .top .socmed-icon a:nth-child(3):hover{
+    color: #229ED9;
+    background: #fff;
+  }
+  .top .socmed-icon a:nth-child(4){
+    background: #5865F2;
+  }
+  .top .socmed-icon a:nth-child(4):hover{
+    color: #5865F2;
+    background: #fff;
+  }
+.navbar .top .links {
+    display: flex;
+    gap: 2.5rem;
+}
+.navbar .top .toggle_button {
+    margin-right: 10px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.action_button {
+    margin-right: 10px;
+    background-color: #00e600;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+@media (min-width: 768px) {
+    .navbar-container .logo {
+    width: 200px;
+    height: auto;
+    margin-left: 10px;
+    }
+}
+@media (max-width: 992px) {
+    .navbar .top .links,
+    .navbar .top .action_button,
+    .navbar .top .socmed-icon {
+        display: none;
+    }
+    .navbar .top .toggle_button {
+        display: block;
+    }
+    .dropdown_menu {
+        display: block;
+    }
+    .navbar {
+        height: 7.5vh;
+    }
+}
+
+/* Navbar */
+
+/* Dropdown Menu */
+
+.dropdown_menu {
+    display: block;
+    position: absolute; 
+    z-index: 10;
+    right: 10px; 
+    top: 12vh;
+    height: 0;
+    width: 300px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+}
+.dropdown_menu.open {
+    height: 245px;
+}
+.dropdown_menu li {
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu .action_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Dropdown Menu */
