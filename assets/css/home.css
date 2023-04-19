@@ -1,85 +1,87 @@
-a{
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+body {
+    background-color: #0d0d0d;
+}
+a {
     text-decoration: none;
 }
-h1 {
-    color: var(--text-color);
-    font-size: 1.25rem;
-    font-weight: 400;
-}
-#video-list-container {
-    width: 100%;
-}
-.video-list-container {
-    background-color: #1a1a1a;
-    width: 50%;
-    padding: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
-}
-/* // Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
-    .video-list-container {
-        background-color: #1a1a1a;
+@media screen and (max-width: 576px) {
+    .main-content .grid {
         width: 100%;
-        padding: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 60px;
+        display: block;
+    }
+    .main-content .grid .grid-container {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .main-content .grid .grid-container .grid-image {
+        width: 100%;
+        height: auto;
+    }
+    h1 {
+        color: #cccccc;
+        font-weight: 400;
+        font-size: 1.1rem;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
     }
 }
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 577px) and (max-width: 768px) {
-    .video-list-container {
-        background-color: #1a1a1a;
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .main-content .grid {
         width: 80%;
-        padding: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 60px;
+    }
+    .main-content .grid .grid-container {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .main-content .grid .grid-container .grid-image {
+        width: 100%;
+        height: auto;
+    }
+    h1 {
+        width: auto;
+        color: #cccccc;
+        font-weight: 400;
+        font-size: 1.1rem;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
     }
 }
-/* // Large devices (laptops, 992px and up) */
-@media (min-width: 769px) and (max-width: 992px) {
-    .video-list-container {
-        background-color: #1a1a1a;
+@media screen and (min-width: 993px) {
+    .main-content .grid {
         width: 70%;
-        padding: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 60px;
     }
-}
-/* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 993px) and (max-width: 1200px) {
-    .video-list-container {
-        background-color: #1a1a1a;
-        width: 60%;
-        padding: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 60px;
+    .main-content .grid .grid-container {
+        width: 100%;
+        padding-bottom: 15px;
     }
-}
-/* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1201px) and (max-width: 1400px) {
-    .video-list-container {
-        background-color: #1a1a1a;
-        width: 50%;
-        padding: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 60px;
+    .main-content .grid .grid-container .grid-image {
+        width: 100%;
+        height: auto;
     }
-}
-/* // XXX-Large devices (larger desktops, TV, 1401px and up) */
-@media (min-width: 1401px) {
-    .video-list-container {
-        background-color: #1a1a1a;
-        width: 50%;
-        padding: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 60px;
+    h1 {
+        width: auto;
+        color: #cccccc;
+        font-weight: 400;
+        font-size: 1.1rem;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
     }
 }
